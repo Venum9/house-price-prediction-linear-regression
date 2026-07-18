@@ -1,95 +1,156 @@
-# 🏠 House Price Prediction using Linear Regression
+# Machine Learning Internship Projects
 
-## 📌 Project Overview
+This repository contains my completed projects from the **Codveda Technologies Machine Learning Internship**.
 
-This project was completed as part of my **Machine Learning Internship at Codveda Technologies**.
-
-The objective of the project was to preprocess a housing dataset, train a Linear Regression model, predict house prices, and evaluate the model using standard machine learning metrics.
+Throughout the internship, I implemented various machine learning algorithms, performed data preprocessing, evaluated model performance, and documented each project in Jupyter Notebooks.
 
 ---
 
-## Project Structure
+## 📂 Repository Structure
 
 ```
-Codveda ML Internships/
-│
+.
 ├── datasets/
-├── notebooks/
 ├── models/
+├── notebooks/
 ├── reports/
-├── src/
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## 🛠 Technologies Used
+# 📌 Completed Projects
+
+## 🏠 Level 1 Task 1 — House Price Prediction using Linear Regression
+
+### Objective
+
+Build a regression model capable of predicting house prices using housing features.
+
+### Skills Applied
+
+- Data Loading
+- Data Exploration
+- Data Preprocessing
+- Feature Selection
+- Train-Test Split
+- Linear Regression
+- Model Evaluation
+
+### Evaluation Metrics
+
+- Mean Squared Error (MSE)
+- R² Score
+
+---
+
+## 🌸 Level 1 Task 2 — Iris Flower Classification using K-Nearest Neighbors (KNN)
+
+### Objective
+
+Classify Iris flowers into their respective species using the KNN classification algorithm.
+
+### Skills Applied
+
+- Dataset Exploration
+- Feature Selection
+- Target Variable Analysis
+- Train-Test Split
+- KNN Classification
+- Hyperparameter Selection (Best K)
+- Accuracy Evaluation
+
+### Evaluation Metrics
+
+- Accuracy Score
+- K Value Comparison
+
+---
+
+## 📞 Level 2 Task 1 — Customer Churn Prediction using Logistic Regression
+
+### Objective
+
+Predict whether a customer is likely to churn using Logistic Regression.
+
+### Skills Applied
+
+- Data Cleaning
+- Label Encoding
+- Feature Scaling
+- Train-Test Split
+- Logistic Regression
+- Model Evaluation
+- Confusion Matrix
+- Classification Report
+- Odds Ratio Interpretation
+
+### Evaluation Metrics
+
+- Accuracy
+- Precision
+- Recall
+- F1-Score
+- Confusion Matrix
+
+---
+
+# 🛠 Technologies Used
 
 - Python
 - Pandas
 - NumPy
+- Matplotlib
 - Scikit-learn
 - Jupyter Notebook
-- VS Code
+- Git
+- GitHub
+- Visual Studio Code
 
 ---
 
-##  Machine Learning Workflow
+# 📈 Machine Learning Algorithms Covered
 
-The project follows these steps:
-
-1. Import libraries
-2. Load dataset
-3. Explore the dataset
-4. Check for missing values
-5. Feature scaling
-6. Split the dataset
-7. Train a Linear Regression model
-8. Make predictions
-9. Evaluate the model
-10. Interpret coefficients
+- Linear Regression
+- K-Nearest Neighbors (KNN)
+- Logistic Regression
 
 ---
 
-##  Model Performance
+# 📁 Datasets
 
-**Mean Squared Error (MSE):**
+The projects make use of the following datasets:
 
-24.29
-
-**R-squared (R²):**
-
-0.669
-
-The model explains approximately **67%** of the variation in house prices.
+- House Price Dataset
+- Iris Dataset
+- Customer Churn Dataset
 
 ---
 
-##  Dataset
+# 🚀 Future Projects
 
-The project uses the Boston Housing dataset.
+Upcoming internship projects include:
 
-Target Variable:
-
-- MEDV (Median House Value)
-
-Features include:
-
-- Crime Rate
-- Number of Rooms
-- Age
-- Distance to Employment Centres
-- Property Tax
-- Pollution Level
-- and several others.
+- Decision Trees
+- Random Forest
+- Support Vector Machine (SVM)
+- Naive Bayes
+- Clustering Algorithms
+- Deep Learning
 
 ---
 
-##  Author
+# 👩‍💻 Author
 
 **Muhammed Mumeenat**
 
-Machine Learning Intern @ Codveda Technologies
+Machine Learning Intern | Software Engineer | Front-End Developer
 
-Software Engineer | AI & Machine Learning Enthusiast
+GitHub: https://github.com/Venum9
+
+LinkedIn: *(www.linkedin.com/in/muhammed-mumeenat-87a759306)*
+
+---
+
+Thank you for visiting this repository. Feedback and suggestions are always welcome.
