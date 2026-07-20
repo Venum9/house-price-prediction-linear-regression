@@ -148,6 +148,22 @@ Build an ensemble learning model using Random Forest to classify Iris flower spe
 - F1-Score
 
 ---
+### 6. Iris Classification using Support Vector Machine (SVM)
+
+**Objective**
+
+Classify Iris flower species using a Support Vector Machine classifier.
+
+### Skills Learned
+
+- Support Vector Machine (SVM)
+- StandardScaler
+- Decision Boundary
+- Hyperplane
+- Accuracy Evaluation
+- Confusion Matrix
+- Classification Report
+- F1-Score
 
 # 📈 Machine Learning Concepts Covered
 
