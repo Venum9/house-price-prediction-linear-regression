@@ -1,247 +1,199 @@
-# 🚀 Codveda Technologies - Machine Learning Internship
+# 🌸 Iris Flower Classification using Artificial Neural Network (TensorFlow)
 
-## 👩‍💻 Intern Information
+## 📌 Project Overview
 
-**Name:** Muhammed Mumeenat
+This project implements an **Artificial Neural Network (ANN)** using **TensorFlow/Keras** to classify Iris flowers into three different species based on their flower measurements.
 
-**Internship:** Machine Learning Internship
-
-This repository contains all projects completed during my Machine Learning Internship at **Codveda Technologies**. The projects cover both regression and classification techniques using Scikit-learn and demonstrate the complete machine learning workflow, including data preprocessing, model training, evaluation, visualization, and version control with Git and GitHub.
+The objective is to demonstrate how Deep Learning can solve multi-class classification problems using a simple feedforward neural network.
 
 ---
 
-# 🛠️ Technologies Used
+## 📂 Dataset
+
+**Dataset:** Iris Dataset
+
+The dataset contains **150 flower samples** with four numerical features:
+
+- Sepal Length
+- Sepal Width
+- Petal Length
+- Petal Width
+
+Target Classes:
+
+- Setosa
+- Versicolor
+- Virginica
+
+Dataset Shape:
+
+- **Rows:** 150
+- **Columns:** 5
+
+No missing values were found in the dataset.
+
+---
+
+## 🛠 Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Matplotlib
 - Scikit-learn
-- Jupyter Notebook
-- Git
-- GitHub
+- TensorFlow
+- Keras
 
 ---
 
-# 📂 Repository Structure
+## 📚 Project Workflow
 
-```
-Codveda-ML-Internship/
-│
-├── datasets/
-│
-├── notebooks/
-│   ├── House_Price_Prediction_Linear_Regression.ipynb
-│   ├── Iris_KNN_Classification.ipynb
-│   ├── Logistic_Regression_Customer_Churn.ipynb
-│   ├── Decision_Tree_Iris_Classification.ipynb
-│   └── Random_Forest_Iris_Classification.ipynb
-│
-├── models/
-│
-├── reports/
-│
-├── README.md
-└── requirements.txt
-```
+### 1. Data Loading
 
----
+Loaded the Iris dataset using Pandas.
 
-# 📚 Completed Projects
+### 2. Exploratory Data Analysis
 
-## ✅ Level 1
+Performed:
 
-### 1. House Price Prediction using Linear Regression
+- Dataset shape inspection
+- Dataset information
+- Statistical summary
+- Missing value check
 
-**Objective**
+### 3. Data Preprocessing
 
-Predict house prices using multiple housing features.
+- Encoded the target labels using LabelEncoder.
+- Split the dataset into training and testing sets.
+- Standardized the features using StandardScaler.
 
-### Skills Learned
+### 4. Building the Neural Network
 
-- Data preprocessing
-- Feature selection
-- Train-test splitting
-- Linear Regression
-- Mean Squared Error (MSE)
-- R² Score
-- Feature coefficient interpretation
+A Sequential Neural Network was created with:
 
----
+- Input Layer (4 Features)
+- Hidden Layer (16 Neurons, ReLU)
+- Hidden Layer (8 Neurons, ReLU)
+- Output Layer (3 Neurons, Softmax)
 
-### 2. Iris Classification using K-Nearest Neighbors (KNN)
+### 5. Model Compilation
 
-**Objective**
+The model was compiled using:
 
-Classify Iris flower species using the K-Nearest Neighbors algorithm.
+- Optimizer: Adam
+- Loss Function: Sparse Categorical Crossentropy
+- Metric: Accuracy
 
-### Skills Learned
+### 6. Model Training
 
-- Label Encoding
-- KNN Classification
-- Hyperparameter tuning (K values)
-- Accuracy evaluation
-- Confusion Matrix
-- Classification Report
-- F1-Score
+The model was trained using:
 
----
+- Epochs: 50
+- Batch Size: 8
+- Validation Split: 20%
 
-# ✅ Level 2
+### 7. Model Evaluation
 
-### 3. Customer Churn Prediction using Logistic Regression
+Performance was evaluated using:
 
-**Objective**
-
-Predict whether a customer is likely to churn based on customer behavior.
-
-### Skills Learned
-
-- Data preprocessing
-- One-Hot Encoding
-- Feature Scaling
-- Logistic Regression
 - Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
+- F1 Score
 - Classification Report
+- Confusion Matrix
 
 ---
 
-### 4. Iris Classification using Decision Tree
+## 📊 Results
 
-**Objective**
+### Test Accuracy
 
-Classify Iris flower species using a Decision Tree classifier.
+**100%**
 
-### Skills Learned
+### F1 Score
 
-- Decision Tree Classification
-- Tree Visualization
-- Gini Index
-- Tree Pruning
-- Accuracy Evaluation
-- Precision
-- Recall
-- F1-Score
-- Classification Report
+**1.00**
+
+### Classification Report
+
+| Class | Precision | Recall | F1 Score |
+|--------|-----------|--------|----------|
+| Setosa | 1.00 | 1.00 | 1.00 |
+| Versicolor | 1.00 | 1.00 | 1.00 |
+| Virginica | 1.00 | 1.00 | 1.00 |
+
+Overall Accuracy:
+
+**100%**
+
+---
+
+## 📈 Confusion Matrix
+
+The trained model correctly classified every flower in the testing dataset.
+
+```
+[[10 0 0]
+ [0 9 0]
+ [0 0 11]]
+```
+
+No misclassifications were recorded.
 
 ---
 
-### 5. Iris Classification using Random Forest
+## 🧠 Key Concepts Learned
 
-**Objective**
-
-Build an ensemble learning model using Random Forest to classify Iris flower species.
-
-### Skills Learned
-
-- Random Forest Classification
-- Ensemble Learning
-- Multiple Decision Trees
-- Feature Importance
-- Accuracy Evaluation
-- Confusion Matrix
-- Classification Report
-- F1-Score
-
----
-### 6. Iris Classification using Support Vector Machine (SVM)
-
-**Objective**
-
-Classify Iris flower species using a Support Vector Machine classifier.
-
-### Skills Learned
-
-- Support Vector Machine (SVM)
-- StandardScaler
-- Decision Boundary
-- Hyperplane
-- Accuracy Evaluation
-- Confusion Matrix
-- Classification Report
-- F1-Score
-
-# 📈 Machine Learning Concepts Covered
-
-- Data Exploration
-- Data Cleaning
-- Handling Missing Values
-- Feature Engineering
-- Label Encoding
-- One-Hot Encoding
+- Artificial Neural Networks (ANN)
+- TensorFlow & Keras
+- Sequential Models
+- Dense Layers
+- ReLU Activation Function
+- Softmax Activation Function
+- Adam Optimizer
+- Sparse Categorical Crossentropy
 - Feature Scaling
-- Train-Test Split
-- Regression
-- Classification
+- Label Encoding
+- Multi-Class Classification
+- Model Training
 - Model Evaluation
-- Hyperparameter Tuning
-- Ensemble Learning
-- Feature Importance
-- Decision Tree Visualization
 
 ---
 
-# 📊 Evaluation Metrics Used
+## 📁 Repository Structure
 
-- Mean Squared Error (MSE)
-- R² Score
-- Accuracy
-- Precision
-- Recall
-- F1-Score
-- Confusion Matrix
-- Classification Report
+```
+datasets/
+│── iris.csv
 
----
+notebooks/
+│── Neural_Network_Iris_Classification.ipynb
 
-# 🎯 Internship Progress
-
-| Level | Project | Status |
-|--------|---------|--------|
-| Level 1 | House Price Prediction (Linear Regression) | ✅ Completed |
-| Level 1 | Iris Classification (KNN) | ✅ Completed |
-| Level 2 | Customer Churn Prediction (Logistic Regression) | ✅ Completed |
-| Level 2 | Iris Classification (Decision Tree) | ✅ Completed |
-| Level 2 | Iris Classification (Random Forest) | ✅ Completed |
+README.md
+requirements.txt
+```
 
 ---
 
-# 🚀 Current Progress
+## 🚀 Future Improvements
 
-- ✅ 5 Machine Learning Projects Completed
-- ✅ Git & GitHub Version Control
-- ✅ Jupyter Notebook Documentation
-- 🔄 Continuing with remaining Level 2 and Level 3 internship projects
+Possible improvements include:
 
----
-
-# 🌟 Learning Outcomes
-
-Through this internship, I have gained practical experience in:
-
-- Building regression models
-- Building classification models
-- Evaluating machine learning models
-- Understanding supervised learning algorithms
-- Visualizing model performance
-- Writing well-documented Jupyter notebooks
-- Managing projects using Git and GitHub
-- Developing reproducible machine learning workflows
+- Hyperparameter tuning
+- Adding more hidden layers
+- Implementing Dropout to reduce overfitting
+- Testing different optimizers
+- Applying the model to larger multi-class datasets
 
 ---
 
-# 📬 Connect With Me
+## 👩‍💻 Author
 
-**Muhammed Mumeenat**
+**Muhammed-Awwal Mumeenat**
 
-- 💼 LinkedIn: *www.linkedin.com/in/muhammed-mumeenat-87a759306*
-- 💻 GitHub: https://github.com/Venum9
-- 📧 Email: Muhammedmumeenat@gmail.com
+Aspiring Machine Learning Engineer | AI Engineer | Front-End Developer
+
+Currently building practical Machine Learning and Deep Learning projects while expanding my expertise in Artificial Intelligence.
 
 ---
 
-⭐ Thank you for visiting this repository. More machine learning projects will be added as I continue my internship journey.
+⭐ If you found this project useful, consider giving it a star!
